@@ -1,0 +1,223 @@
+/* .box2{ */
+    /* border: 3px black solid; */
+    /* /* background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    color:black;
+    width:300px;
+    height: 120px;
+    text-align: center;
+    padding-top: 85px;
+    font-size: 25px;
+    margin: 20px;
+}
+.main{display: flex;}
+.showcar{
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    color:#009579;
+    width:300px;
+    height: 140px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 65px;
+    font-size: 25px;
+    margin: 20px;
+}
+.box2:hover{
+    color:#009579;
+}
+.head1{
+    text-align:center;
+    font-size:25px;
+    color: black;
+}
+input{
+    display: block;
+    width: 380px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #dddddd;
+    background: #eeeeee;
+    margin-top:15px;
+    transition: background 0.2s, border-color 0.2s;
+}
+.inputbox{
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    /* border: 3px black solid; */
+    /* width:380px;
+    height: 200px;
+    text-align: center;
+    display: flex; 
+    padding-top: 40px; 
+    font-size: 25px; */
+    /* margin: 20px; */
+    /* position: absolute;
+  top: 40%;
+  left: 40%;
+  margin: -50px 0 0 -50px;
+}
+input:focus{
+    border-color: #009579;
+    background: #ffffff;
+}
+input[type=submit]{
+    background-color:#009579;
+    color:white;
+    outline:none;
+    font-size:18px;
+}
+input[type=submit]:hover{
+    background: #007f67;
+}
+input[type=submit]:active{
+    transform: scale(0.98);
+    
+}
+body{
+background-image: linear-gradient(rgba(0, 149, 121, 0.5),rgba(0, 149, 121, 0.5)),url(images/BG2.jpg);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.vehicle-list{
+    width: 95%;
+    height: 95%;    
+    margin: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card, .add_form, .plus-box{
+    width: 15%;
+    height: 35%;    
+    margin: 2%; 
+    padding: 2%;  
+    border-radius: 10px;
+}
+
+.card{
+    background-color: #a3ecde; 
+    position: relative;
+}
+
+.bg-img{
+    width: 85%;
+    height: 85%;
+    margin: 3%;
+    background:url("images/BG1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 25%;
+}
+
+.circle{
+    width: 14.5%;
+    height: 13.5%;
+    border: 5px solid #009579;
+    border-radius: 50px;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    align-self: center;
+}
+
+.counter{
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #009579;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.vehicle-details{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+}
+
+.vehicle-detail{
+    margin-top: 7.5%;
+}
+
+#uimg, #dimg{
+    display: inline;
+}
+
+button{
+    background: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.card_btn, button{
+    width: 35%;
+    height: 35%;
+}
+.add_form{
+    background-color: #a3ecde; 
+    position: relative;
+    display: none;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.inpt, .inptbtn{
+    width: 50%;
+    height: 30px;
+}
+
+.inptbtn{
+    font-size: 20px;
+    background: #009579;
+    color: #a3ecde;
+    border: none;
+    border-radius: 5pz;
+}
+
+.form_feild{
+    width: 100%;
+    margin: 7% 0% 7% 0%;
+}
+
+.plus-box{
+    border: 5px dashed #a3ecde;
+    cursor: pointer;
+}
+
+.add_txt{
+    font-size: 125px;
+    width: 100%;
+    margin: 20% 0% 5% 0%;
+    text-align: center;
+    color: #a3ecde; 
+    cursor: pointer;
+}

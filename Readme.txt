@@ -1,0 +1,1 @@
+BookMyEVSlot is php Based Project for booking electric vehicle charging slot.
