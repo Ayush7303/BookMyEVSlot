@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .box_con{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    position: relative;
+  } */
+
+  /* .title_con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color: lightgray;
+    font-weight: bold;
+  } */
+
+
+
+body{
+background-image: linear-gradient(rgba(0, 149, 121, 0.5),rgba(0, 149, 121, 0.5)),url(../images/b2.jpg);
+/* 
+    width: 100%;
+    height: 90%; */
+}
+
+body .main{
+    width: 95%;
+    height: 90%;
+    margin: 2.5% 0% 0% 2.5%;
+    /* position: fixed; */
+}
+
+.main .box{
+    width: 40%;
+    height: 500px;  
+    margin: 0% 0% 0% 30%;
+    border: 1px solid white;
+    /* background-color: #009579; */
+    border-radius: 5px;
+}
+
+/* form label{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form select{
+    width: 80%;
+    height: 40%;
+    margin: 2% 0%;
+    font-size: 15px;
+}
+
+form input{
+    width: 30%;
+    height: 25%;
+}  */
+
+
+ .box .booking-summary{
+    width: 100%;
+    height: 70%;
+
+}
+
+.booking-summary .booking-details{
+    width: 70%;
+    height: 89.5%;
+    /* background: #009579; */
+    margin: 2% 8%;
+    padding: 3% 7%;
+}
+
+.booking-details h2{
+    color: white;
+}
+
+.booking-details label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+/* .booking-details input[type='submit']{
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+}  */
+#rzp-button1{
+    background-color:#009579;
+    color:black;
+    outline:none;
+    font-size:18px;
+}
+#rzp-button1:hover{
+    background: #007f67;
+}
+#rzp-button1:active{
+    transform: scale(0.98);
+}
+button,select,input{
+    background-color:transparent;
+    display: block;
+    width: 100%;
+    /* padding: 0.75rem; */
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #eeeeee;
+    margin-top:10px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+table{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px ba; */
+}
+
+td{
+    padding: 10px;
+
+}

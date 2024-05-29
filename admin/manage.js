@@ -1,0 +1,104 @@
+// function loadstTB(page){
+// 	$.ajax({
+// 		url:"../login-logout/ajax.php",
+// 		type:"POST",
+// 		data:{"flag":"displaystation",page_no:page},
+// 		success:function(data){
+// 			$("#sttable").html(data);
+// 		}
+// 	})
+// }
+
+// function resetform() 
+// {
+// 	$('#sform')[0].reset();
+// }
+// loadstTB();
+// $(".insert").on("click",function(){
+// 	sname=$(".stname").val();
+// 	sloc=$(".stloc").val();
+// 	scity=$(".stcity").val();
+// 	slat=$(".stlat").val();
+// 	slon=$(".stlon").val();
+// 	sava=$(".stava").val();
+// 	$.ajax({
+// 		url:"../login-logout/ajax.php",
+// 		type:"POST",
+// 		data:{"flag":"insertstation","stname":sname,"stloc":sloc,"stcity":scity,"stlat":slat,"stlon":slon,"stava":sava},
+// 		success:function(data){
+// 			if(data==1)
+// 			{
+// 				alert("data inserted successfully.");
+// 				loadstTB();
+// 				resetform();
+// 			}
+// 		}
+// 	})
+// })
+// $(document).on("click",".deletedata",function(e){
+
+// 	e.preventDefault();
+// 	id=$(this).attr("id");
+// 	$.ajax({
+// 		url:"../login-logout/ajax.php",
+// 		type:"POST",
+// 		data:{"flag":"deletestation","stid":id},
+// 		success:function(data)
+// 		{
+// 			if(data==1)
+// 			{
+// 				loadstTB();
+// 				alert("deleted successfully.");			
+// 			}
+// 		}
+// 	})
+// })
+// std_id=0;
+// $(document).on("click",".updatedata",function(e){
+// 	e.preventDefault();
+// 	$(".update").show();
+// 	$(".insert").hide();
+// 	sid=$(this).attr("id");
+// 	$.ajax({
+// 		url:"../login-logout/ajax.php",
+// 		type:"POST",
+// 		data:{"flag":"reflectstation","stid":sid},
+// 		success:function(data){
+// 			$value=JSON.parse(data);
+// 			$(".stname").val($value.stationname);
+// 			$(".stloc").val($value.location);
+// 			$(".stcity").val($value.city);
+// 			$(".stlat").val($value.latitude);
+// 			$(".stlon").val($value.longitude);
+// 			$(".stava").val($value.available);
+// 			$std_id=$value.stationid;
+// 		}
+// 	})
+// })
+// $(".update").on("click",function(){
+// 	sname=$(".stname").val();
+// 	sloc=$(".stloc").val();
+// 	scity=$(".stcity").val();
+// 	slat=$(".stlat").val();
+// 	slon=$(".stlon").val();
+// 	sava=$(".stava").val();
+// 	sid=$std_id;
+// 	$.ajax({
+// 		url:"../login-logout/ajax.php",
+// 		type:"POST",
+// 		data:{"flag":"updatestation","stname":sname,"stloc":sloc,"stcity":scity,"stlat":slat,"stlon":slon,"stava":sava,"stid":sid},
+// 		success:function(data){
+// 			if(data==1)
+// 			{
+// 				alert("updated successfully.");
+// 				loadstTB();
+// 				resetform();
+// 			}
+// 		}	
+// 	})
+// })
+// $(document).on("click","#pagination a",function(e){
+//     e.preventDefault();
+//     var page_id=$(this).attr("id");
+//     loadstTB(page_id);
+// })

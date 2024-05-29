@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    background: #009579;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+.mainContainer{
+    position: relative;
+}
+
+#boxs{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+.slot-main{
+    width:500px;
+    height:350px;
+    border: 1px solid black;
+    position: fixed;
+    top:100px;
+    top: 0px;
+    left: 400px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+    background: white;
+    display: none;
+}
+
+.slot-main .close-slot-btn{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 1% 0% -3% 94.5%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.close-slot-btn h2{
+    margin: -15% 0% 0% 0%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.slot-main .week-details{
+    width: 100%;
+    height: 25%;
+    padding: 10px 0px 0px 0px;
+}
+
+.week-details .week-boxes{
+    width: 90%;
+    height: 95%;
+    margin: 0px 25px;
+}
+
+.week-boxes .days_value{
+    width: 15%;
+    height: 70%;
+    margin: 10px 0px 0px 5px;
+}
+
+.slot-main hr{
+    width: 80%;
+    margin: 0% 10%;
+}
+
+.slot-main .slot-time-data{
+    width: 100%;
+    height: 72%;
+    display: flex;
+}
+
+.slot-time-data form{
+    width: 80%;
+    height: 90%;
+    margin: 10px 0px 0px 50px;
+} 
+
+.slot-time-data form .slot-times{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slot-times .sl-time-active, .sl-time-inactive{
+    width: 25%;
+    height: 15%;
+    margin: 0% 0% 2% 5%;
+    text-align: center;
+}
+
+.slot-time-data form .book-btn{
+    width: 100%;
+}
+
+.book-btn input{
+    margin: 1% 5%;
+}
+
+.station-list{
+    width: 100%;
+    height: 20%;
+    background: #FFFFFF;
+    display: flex;
+    margin: 1% 0% 1% 0%;
+    border-bottom: 2px solid #009579;
+}
+
+.card{
+    width: 96%;
+    height: auto;  
+    margin: 1% 0% 0% 2%;
+    list-style: none;
+/* background-image: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7)),url(../images/BG1.jpg); */
+/* background-size:cover; */
+
+    /* border-bottom: 3px solid #009579; */
+    border: 2px solid #009579;
+    border-radius: 7px;
+    /* border:none; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* border-top-left-radius: 7px;
+    border-top-right-radius: 7px; */
+}
+
+.station-img{
+    width: 150px;
+    height: 150px;
+}
+.station-act-deact{
+    width: 20%;
+    height: 100%;
+}
+.station-details{
+    width: 70%;
+    height: 100%;   
+}
+
+.station-details .st-name, .st-location{
+    margin: 1%;
+    color: black;
+}
+.station-details .st-location{
+    font-size: 20px;
+}
+
+#station-img{
+    width: 100%;
+    height: 100%;
+}
+.square{
+    width: 2%;
+    height: 20%;
+    border: 2px solid #009579;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.square, .txt{
+    margin: 0.5% 0% 0% 1%;
+    display: inline-flex;
+}
+
+.txt{
+    margin: 0%;
+    font-size: 17.5px;
+    color: #009579;
+}
+
+.fa-caret-down, .fa-caret-up{
+    margin: 0% 0% 0% 25%;
+    font-size:100px; 
+    color:#009579
+}
+
+.avl-txt, .unavl-txt{
+    width: 80%;
+    height: 30%;
+    margin: 15% 0% 0% 10%;
+    display: flex;
+}
+
+.avl .circle{
+    width: 7.5%;
+    height: 40%;
+    background: #2EF014;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.avl, .unavl{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+.avl {
+    color: #2EF014;
+}
+
+.avl p{
+    width: 100%;
+    height: 100%;
+    margin: 5% 0% 0% 0%;
+}
+
+.unavl-txt .circle{
+    width: 7.5%;
+    height: 40%;
+    background: #f01814;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.unavl{
+    color: #f01814;
+}
+
+.unavl p{
+    width: 100%;
+    height: 100%;
+    margin: 5% 0% 0% 0%;
+}
+
+.slot-list{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* margin: 0% 12.5% 0% 12.5%; */
+}
+
+.slot0, .slot4{
+    width: 12.5%;
+    height: 100%;
+}
+
+.slot1, .slot2, .slot3{
+    width: 25%;
+    height: 100%;
+    margin: 0% 0% 2% 0%;
+    border-right: 1px solid #009579;
+    border-left: 1px solid #009579;
+}
+
+.slot-img{
+    width: 30%;
+    height: 100%;
+}
+
+.slot-img img{
+    width: 60%;
+    height: 55%;
+    margin: 25% 0% 10% 20%;
+}
+
+.slot-details{
+    width: 70%;
+    height: 100%;
+    /* color: #009579; */
+    display: flex;   
+}
+
+.slot-data{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.book-btn{
+    width: 100%;
+    height: 20%;
+}
+
+.book-btn button{
+    width: 70%;
+    height: 100%;
+    margin: 0% 0% 0% 15%;
+    font-size: 15px;
+    border: black solid 1px;
+    /* background: #009579; */
+    border-radius: 5px;
+
+    color: #009579;
+    font-weight: bold;
+}
+
+.general-details{
+    width: 50%;
+    height: 100%;
+}
+
+.general-details p{
+    font-size: 15px;
+}
+
+.general-details{
+    margin: 11% 0% 0% 5%;
+}
+
+.price-details{
+    width: 50%;
+    height: 100%;
+}
+
+.avlbl, .price, .unavlbl{
+    width: 100%;
+}
+
+.avlbl, .unavlbl{
+    height: 40%;
+    margin: 10% 0% 0% 0%;
+    display: flex;
+}
+
+.mark, .avlbl-txt, .unavlbl-txt{
+    height: 40%;
+}
+
+.mark{
+    width: 20%;
+}
+.avlbl-txt, .unavlbl-txt{
+    width : 80%;
+
+}
+
+.mark .circle{
+    width: 30%;
+    height: 40%;
+    background: #2EF014;
+    border-radius: 50px;
+    margin: 100% 0% 0% 0%;
+}
+
+.avlbl p{
+    width: 100%;
+    height: auto;
+    margin: 20% 0% 0% 0%;
+    color:#2EF014;
+}
+.unavlbl p{
+    width: 100%;
+    height: auto;
+    margin: 20% 0% 0% 0%;
+    color:#f01814;
+}
+
+.price{
+    height: 60%;
+}
+
+@media (min-width:300px) and (max-width:800px)
+{   
+    
+}
+select {
+    /* Reset Select */
+    margin:10px;
+    appearance: none;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    /* box-shadow: none; */
+    /* Personalize */
+    flex: 1;
+    padding: 0 2em;
+    /* color: white; */
+    background-color: gainsboro;
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  #inl{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+
+    right: 0;
+    /* margin-left: -20px; */
+    margin-top: 10px;
+    padding: 4.5px;
+    color:#009579;
+    background-color: gainsboro;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    background-color: #009579;
+    color: white;
+  }

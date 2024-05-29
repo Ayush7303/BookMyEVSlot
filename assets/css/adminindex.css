@@ -1,0 +1,97 @@
+ *{
+margin: 0px;
+}
+body{
+/* background-image: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7)),url(login-logout/b4.jpg); */
+background-image: linear-gradient(rgba(0, 149, 121, 0.5),rgba(0, 149, 121, 0.5)),url(../images/b2.jpg);
+
+background-size:cover;
+}
+.concenter{
+    text-align: center;
+}
+.db{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box2{
+    width: 15%;
+    background-color: white;
+    margin: 1%;
+    padding: 2rem;
+/* background-image: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7)),url(../images/bg7.jpg); */
+
+    /* background:url("../images/bg7.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    /* opacity: 50%; */
+    border: 1px solid gray;
+}
+.rig{
+    float: right;
+}
+#mapCanvas{
+    height: 600px;
+    width: 100%;
+}
+#mapContainer
+{
+    margin: 30px;
+}
+img{
+    height: 60px;
+    float: left;
+}
+.nav{
+overflow: hidden;
+/* display: flex; */
+/* justify-content: center; */
+
+    background-color: #009579;
+}
+.mrg{
+     margin-left: 374px;
+}
+.nav a{
+    /* width: 180px; */
+    float: left;
+    /* height: 20px; */
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+}
+.nav a:hover{
+    background-color: white;
+    color: #009579;
+}
+
+
+
+.nav2{
+		
+    background-color: #009579;
+    color: white;	
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.nav2 a:hover{
+    background-color: white;
+    color: #009579;
+}
+.nav2 a{
+    padding: 10px 26px;
+    
+    text-decoration: none;
+    color: white;
+}

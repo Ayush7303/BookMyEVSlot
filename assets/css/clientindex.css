@@ -1,0 +1,573 @@
+*{
+    margin: 0px;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+    /* background-image: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7)),url(login-logout/b4.jpg); */
+    background-image: linear-gradient(rgba(0, 149, 121, 0.5),rgba(0, 149, 121, 0.5)),url(../images/b4.jpg);
+    background-repeat: repeat;
+    background-size:cover;
+    /* margin: 20px; */
+    }
+    /* .fadein{
+        position: relative;
+        height: 100%;
+        width: 90%;    
+        margin: 0 auto;
+        background-color: black;
+        padding: 10px;
+    }
+    .fadein img{
+        position: absolute;
+        height: calc(99%);
+        width: calc(99%);
+        object-fit: scale-down;
+    } */
+    .fadein{
+        position: relative;
+        width:100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    .fadein img{
+        margin-left: 40px;
+        width: 95%;
+        height: 90%;
+    }
+    .rig{
+        float: right;
+    }
+    
+    .mapContainer
+    {
+        position: relative;
+        margin: 30px;
+    }
+    
+    #mapCanvas{
+        height: 600px;
+        width: 100%;
+    }
+    
+    .Canvas{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    img{
+        float: left;
+        height: 60px;
+    }
+    .nav{
+        overflow: hidden;
+        background-color: #009579;
+    }
+    .mrg{
+         margin-left: 374px;
+    }
+    
+    .nav a{
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        padding: 20px 25px;
+    }
+    .nav a:hover{
+        background-color: white;
+        color: #009579;
+    }
+    
+    .main-box{
+        width : 100px;
+        height : 75px;
+    }
+    
+    .station-details{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .station-details .station-data{
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+    
+    .station-name, .station-available, .station-unavailable{
+        width: 50%;
+        height: 100%;
+    }
+    .station-name h2{
+        margin: 6px 10px 6px 10px;
+        text-align: center;
+    }
+    
+    .station-available .circle{
+        width: 10px;
+        height: 10px;
+        background: rgb(63, 181, 63);
+        border-radius: 50px;
+        margin: 12.5px 30px 12.5px 30px;
+    }
+    
+    .station-unavailable .circle{
+        width: 10px;
+        height: 10px;
+        background: rgb(249, 45, 45);
+        border-radius: 50px;
+        margin: 12.5px 30px 12.5px 30px;
+    }
+    .show-slot-btn{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .show-slot-btn button{
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+        border: none;
+        background: springgreen;
+        border-radius: 7px;
+        font-weight: bolder;
+        margin: 7px 8px 7px 8px;
+    }
+    
+    hr{
+        width: 75%;
+        border: 0.5px solid #009579;
+        margin: 0px 14px 0px 14px;
+    }
+    
+    @media (min-width:0px) and (max-width:320px)
+    {
+        img{
+            height: 800px;
+        }
+    
+        .nav a{
+            font-size: 15px;
+        }
+        #mapCanvas{
+            height: 700px;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:1024px)
+    {
+        img{
+            margin: 0.5% 0% 0% 0%;
+            height: 40px;
+        }
+    
+        #mapCanvas{
+            height: 560px;
+            width: 100%;
+        }
+    
+        .nav a{
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width:1024px) and (max-width:1440px)
+    {
+        img{
+            height: 50px;
+        }
+    
+        #mapCanvas{
+            height: 500px;
+            width: 100%;
+        }
+    
+        .nav a{
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width:1440px)
+    {
+        img{
+            height: 60px;
+        }
+    
+        #mapCanvas{
+            height: 600px;
+            width: 100%;
+        }
+    
+        .nav a{
+            font-size: 20px;
+        }
+    }
+    
+    .main{
+        width:990px;
+        height:530px;
+        border:none;
+        /* margin: auto; */
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 10%);
+        padding: 10px;
+  /* padding: 10px; */
+        /* width:70%; */
+        /* padding: 10px; */
+        /* align-self: center; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin: -50px 200px; */
+        /* box-shadow: 10px 10px 10px black; */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+
+        background: white;
+        z-index: 1000;
+        display: none;
+    }
+    
+    .st-details{
+        width: 100%;
+        height: 17.5%;
+        display: flex;
+    }
+    .st-details h1{
+        font-size: 25px;
+    }
+    .st-details .st-icon{
+        width: 10%;
+        height: 100%;
+    }
+    
+    .st-details .st-icon img{
+        width: 90%;
+        height: 90%;
+    }
+    .st-details .st-data{
+        width: 70%;
+        height: 100%;
+    }
+    
+    .st-data .st-name, .st-location{
+        width: 100%;
+        height: 50%;
+    }
+    
+    h1{
+        margin: 10px 0px 0px 5px;
+    }
+    
+    .st-location p{
+        margin: 0px 0px 0px 5px;
+    }
+    
+    .st-details .st-avl, .st-unavl{
+        width: 20%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .st-avl .circle{
+        width: 10px;
+        height: 10px;
+        background: rgb(63, 181, 63);
+        border-radius: 50px;
+        margin: 45px 20px;
+    }
+    
+    .st-unavl .circle{
+        width: 10px;
+        height: 10px;
+        background: #f01814;
+        border-radius: 50px;
+        margin: 45px 10px; 
+    }
+    
+    .st-avl .close-btn{
+        width: 25px;
+        height: 25px;
+        border: 2px solid black;
+        border-radius: 50px;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    
+    .st-unavl .close-btn{
+        width: 25px;
+        height: 25px;
+        border: 2px solid black;
+        border-radius: 50px;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    
+    .close-btn p{
+        font-size: 30px;
+        margin: -4px 0px;
+        transform: rotate(45deg);
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .st-avl h3{
+        margin: 40px 8px;
+        color: rgb(63, 181, 63);
+    }
+    
+    .st-unavl h3{
+        margin: 40px 10px;
+        color: #f01814;
+    }
+    
+    .main hr{
+        width: 97%;
+    }
+    
+    .main .week-details{
+        width: 100%;
+        height: 12.5%;
+        /* background: #f01814; */
+    }
+    
+    .week-details .week-boxes{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        color: #F84464;
+
+        margin: 0.5% 15%;
+        font-size: 15px;
+    }
+    
+    .week-boxes .days_value{
+        width: 7%;
+        height: 90%;
+        border: 2px solid #F84464;
+        border-radius: 5px;
+        margin: 5px 10px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        transition-property: background, color;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    
+    .week-boxes .days_value:hover{
+        background: #F84464;
+        color: white;
+    }
+    
+    .main .slot-details{
+        width: 100%;
+        height: 70%;
+        display: flex;
+    }
+    
+    
+    
+    .slot-details #slot-form1, #slot-form2, #slot-form3{
+        width: 33%;
+        height: 100%;
+        margin: 0px 1.40px;
+    }
+    
+    .slot-details hr{
+        height: 90%;
+        margin: 15px 0px;
+    }
+    
+    #slot-form1 .slot1{
+        width:100%;
+        height: 100%;
+    }
+    
+    #slot-form2 .slot2{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #slot-form3 .slot3{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slot1 .slot-data{
+        width: 330px;
+        height: 25%;
+        display: flex;
+    }
+    .slot2 .slot-data{
+        width: 330px;
+        height: 25%;
+        display: flex;
+    }
+    .slot3 .slot-data{
+        width: 330px;
+        height: 25%;
+        display: flex;
+    }
+    
+    .slot-data .slot-img{
+        width: 40%;
+        height: 100%;
+    }
+    
+    .slot-img img{
+        width: 50px;
+        height: 50px;
+        margin: 15px 30px;
+    }
+    
+    .slot-data .slot-nm-dt{
+        width: 40%;
+        height: 100%;
+        margin: 12px 0px;
+    }
+    
+    .slot-data .slot-nm-dt h3{
+        font-size: small;
+    }
+    .slot-data .slot-nm-dt p{
+        font-size: 15px;
+    }
+    .slot-data .slot-nm-dt h2{
+        font-size: 15px;
+    }
+    
+    .slot-data .avl-circle{
+        width: 20%;
+        height: 100%;
+    }
+    
+    .avl-circle .circle{
+        width: 10px;
+        height: 10px;
+        background: rgb(63, 181, 63);
+        border-radius: 50px;
+        margin: 40px 20px;
+    }
+    
+    .unavl-circle .circle{
+        width: 10px;
+        height: 10px;
+        background: #f01814;
+        border-radius: 50px;
+        margin: 40px 20px;    
+    }
+    
+    .slot1 .slot-times{
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+        flex-wrap: wrap;
+        color: #009579;
+        /* border-radius: 5px; */
+    }
+    .slot2 .slot-times{
+        width: 100%;
+        /* height: 60%; */
+        display: flex;
+        flex-wrap: wrap;
+        color: #009579;
+
+    }
+    .slot-times .sl-time-unavlbl{
+        border: 2px solid rgba(128, 128, 128, 0.500);
+        color: rgba(128, 128, 128, 0.500);
+         width: 90px;
+        font-size: 12px;
+        margin: 5px 5px 5px 5px;
+
+        height: 30px;
+        border-radius: 7px;
+        cursor: default;        
+    }
+    .slot3 .slot-times{
+        width: 100%;
+        /* height: 60%; */
+        display: flex;
+        flex-wrap: wrap;
+        color: #009579;
+
+    }
+    
+    .slot-times .sl-time-active, .sl-time-inactive{
+        font-size: 12px;
+        width: 90px;
+        height: 30px;
+        margin: 5px 5px 5px 5px;
+        transition-property: background, color;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-out;
+    
+    }
+    
+    .slot-times .sl-time-inactive{
+        /* border: 2px solid rgba(128, 128, 128, 0.500); */
+        color: white;
+        background-color: rgba(128, 128, 128, 0.500);
+        border-radius: 7px;
+        cursor: default;
+    }
+    
+    .slot-times .sl-time-active{
+        border: 2px solid #009579;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    
+    .slot-times .sl-time-active:hover{
+        background: #009579;
+        color: white;
+    }
+    
+    .selected-time{
+        background: #009579;
+        color: white;    
+    }
+    .selected-date{
+        background:#F84446;
+        color: white;    
+    }
+    .slot-times h3{
+        margin: 8px 15px;
+    }
+    
+    .slot1 .book-btn{
+        width: 100%;
+        height: 15%;
+    }
+    .slot2 .book-btn{
+        width: 100%;
+        height: 15%;
+    }
+    .slot3 .book-btn{
+        width: 100%;
+        height: 15%;
+    }
+    
+    [name="time-value"]{
+        width: 100%;
+        height: 100%; 
+        display: none; 
+    }
+    
+    .book-btn input{
+        width: 110px;
+        height: 30px;
+        margin: 10px 100px;
+        /* padding-left: 20px; */
+        /* background: #009579; */
+        color: #009579;
+        font-size: 15px;
+        border: black solid 1px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
